@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.container {
+  width: 550px;
+  margin: 0 auto;
+}
+
+#hero {
+  background-color: #6943ff;
+  color: #ffffff;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+#input-el {
+  border-radius: 5px;
+  width: 100px;
+  height: 75px;
+  text-align: center;
+  border: 1px solid #b295ff;
+  color: #ffffff;
+  background-color: #6943ff;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#input-el:focus {
+  outline: none;
+  border: 1px solid #b295ff;
+}
+
+#input-el::placeholder {
+  color: #ffffff;
+}
+
+#convert-btn {
+  border-radius: 5px;
+  border: none;
+  width: 100px;
+  color: #3d3d3d;
+  background-color: #ffffff;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #1f2937;
+  color: #ffffff;
+  min-height: calc(100vh - 270px);
+  padding-top: 10px;
+}
+
+.section {
+  background-color: #273549;
+  width: 500px;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.section:last-child {
+  margin-bottom: 20px;
+}
+
+h3 {
+  color: #ccc1ff;
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  #input-el {
+    width: 90%;
+    height: 50px;
+    font-size: 30px;
+  }
+
+  #convert-btn {
+    width: 90%;
+    margin-top: 10px;
+    padding: 10px;
+  }
+
+  #main {
+    padding-top: 10px;
+  }
+
+  .section {
+    width: 90%;
+    margin: 10px 0;
+  }
+}
